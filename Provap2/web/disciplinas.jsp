@@ -1,6 +1,6 @@
 <%-- 
     Document   : disciplinas
-    Created on : 14 de jun. de 2021, 13:43:00
+    Created on : 12 de jun. de 2021, 15:43:37
     Author     : palom
 --%>
 
@@ -43,7 +43,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Disciplinas -P2</title>
+        <title>Categorias - MyFinance$</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/header.jspf" %>
@@ -58,7 +58,7 @@
             <div>Esta página é restrita a usuários logados.</div>
         <%}else{%>
         <fieldset>
-            <legend>Nova disciplina:</legend>
+            <legend>Nova disciplinaegoria:</legend>
             <form method="post">
                 Nome: <br/><input type="text" name="nome"/>
                 <br/>Dia da semana <br/><input type="text" name="diadasemana"/>

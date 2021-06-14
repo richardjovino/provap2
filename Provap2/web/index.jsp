@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : 14 de jun. de 2021, 13:33:43
+    Created on : 12 de jun. de 2021, 15:29:43
     Author     : palom
 --%>
 
@@ -8,16 +8,19 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    <!--Um quadro com seu número de matrícula, nome completo, semestre em que ingressou na Fatec e o link de seu perfil no GitHub-->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Ínicio</title>
     </head>
     <body>
-        <h2>Richard Gonçalves Jovino</h2>
-        <h2>Ra 1290482012034</h2>
-        <h2>Inicei na FATEC no 1° semestre de 2020</h2>
-        <a href="https://github.com/richardjovino/programacao">>Link para Meu Github</a>
-         <hr/>
+        <%@include file="WEB-INF/jspf/header.jspf" %>
+        <h2>RA:1290482012025</h2>
+        <h2>Paloma Ierardi Avelino</h2>
+        <h2>Ingressei no 1º semestre de 2020</h2>
+        <a href="https://github.com/palomaierardi/programacao">GitHub</a> 
+        
+        <hr/>
         
         <% String login = (String) session.getAttribute("user.login");%>
         <%if(login == null){%>
@@ -40,6 +43,5 @@
             <%}%>
         </table>
         <%}%>
-    </body>
     </body>
 </html>
