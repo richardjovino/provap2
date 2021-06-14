@@ -43,7 +43,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Categorias - MyFinance$</title>
+        <title>Disciplinas -P2</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/header.jspf" %>
@@ -58,7 +58,7 @@
             <div>Esta página é restrita a usuários logados.</div>
         <%}else{%>
         <fieldset>
-            <legend>Nova disciplinaegoria:</legend>
+            <legend>Nova disciplina:</legend>
             <form method="post">
                 Nome: <br/><input type="text" name="nome"/>
                 <br/>Dia da semana <br/><input type="text" name="diadasemana"/>
